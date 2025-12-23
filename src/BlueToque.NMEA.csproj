@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Library</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<ImplicitUsings>disable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<AssemblyTitle>BlueToque.NMEA</AssemblyTitle>
+		<Description>NMEA Communications library</Description>
+		<Company>BlueToque Software</Company>
+		<Product>NMEA Library</Product>
+		<Copyright>Copyright © BlueToque Software 2025</Copyright>
+		<AssemblyVersion>2.25.1221.0</AssemblyVersion>
+		<FileVersion>2.25.1221.0</FileVersion>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>Properties\BlueToque.NMEA.snk</AssemblyOriginatorKeyFile>
+		<Title>BlueToque NMEA Parser</Title>
+		<PackageIcon>NMEA Logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Garmin\**" />
+	  <EmbeddedResource Remove="Garmin\**" />
+	  <None Remove="Garmin\**" />
+	</ItemGroup>
+	<ItemGroup>
+		<Compile Remove="SerialPortFixer.cs" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="System.IO.Ports" Version="10.0.1" />
+	</ItemGroup>
+	<ItemGroup>
+	  <None Update="Resources\NMEA Logo.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="Resources\README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+</Project>
