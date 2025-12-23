@@ -21,8 +21,11 @@
 		<SignAssembly>true</SignAssembly>
 		<AssemblyOriginatorKeyFile>Properties\BlueToque.NMEA.snk</AssemblyOriginatorKeyFile>
 		<Title>BlueToque NMEA Parser</Title>
-		<PackageIcon>NMEA Logo.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageIcon>Resources\NMEA Logo.png</PackageIcon>
+		<PackageReadmeFile>Resources\README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/BlueToque/BlueToque.NMEA</RepositoryUrl>
+		<PackageTags>NMEA, Parser, C#</PackageTags>
+		<Version>2.25.1221.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
